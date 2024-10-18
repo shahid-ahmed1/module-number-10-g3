@@ -29,6 +29,14 @@
     font-size: 1.25rem;
     border: none;
   }
+  main{
+    max-width: 1440px;
+    margin:0 auto;
+    
+}
+main > section{
+    margin-top: 130px;
+}
   /* navber related style */        
 .navbar{
     justify-content: space-between;
@@ -67,9 +75,43 @@
 .banner img{
     width: 100%;
 }
+
+/* tems related style */
+.tems{
+    align-items: center;
+}
+.tems-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.tems-text-container{
+    margin-left: 130px;
+    max-width: 530px;
+}
+.tems-title{
+    font-size: 2.85rem;
+    font-weight: 700;
+}
+.Quick{
+    font-weight: normal;
+}
+#part-2{
+    color: black;
+}
+#part-3{
+    color: rgb(255, 144, 14);
+}
+
 /* responsive media quary */
 @media screen and (max-width:576px){
-    .navbar , .nav-links{
+    .navbar , .nav-links ,.tems{
         flex-direction: column;
+    }
+    .tems-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .tems-text-container{
+        margin-left: 20px;
     }
 }
